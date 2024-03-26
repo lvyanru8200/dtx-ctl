@@ -56,6 +56,8 @@ spec:
             value: {{ .Values.s3.secure | quote }}
           - name: USERNAME
             value: {{ .Values.registry.userName }}
+          - name: BUILD_JOB_IMAGE
+            values: {{ .Values.finetuneExperimentController.environment.buildImage }}
           - name: METRICS_EXPORT_ADDRESS
             value: {{ .Values.finetuneExperimentController.environment.metricsExportAddress }}
           - name: STORAGE_PATH

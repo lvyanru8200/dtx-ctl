@@ -29,7 +29,7 @@ spec:
               value: info
             - name: COMPLETE_NOTIFY_URL
               value: /apis/util.datatunerx.io/v1beta1/namespaces/
-            - name: DATUNERX_SYSTEM_NAMESPACE
+            - name: DATATUNERX_SYSTEM_NAMESPACE
               value: {{ .Release.Namespace }}
             - name: IN_TREE_SCORING_IMAGE
               value: 10.33.1.11:9090/datatunerx/in-tree-scoring:20231219
